@@ -70,7 +70,6 @@ def main():
         weights_file = sys.argv[3]
         weights = train(titles)
         if weights:
-            print weights
             open(weights_file, 'w').write(simplejson.dumps(weights))
 
     elif task == 'predict':
